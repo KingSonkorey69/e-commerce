@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* set the margin to 0px */
+    margin: 0px;
+    /* set the padding to 0px */
+    padding: 0px;
+    /* dont want to have the down scroll bar */
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.content{
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0px;
+    
+    z-index: 30;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: #EEEDDE;
+    height: 70px;
+    width:100%;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.kikuyu {
+    height: 200px;
+    width: 200px;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: right;
+}
+
+.kikuyu>img {
+    max-width: 100%;
+    object-fit: cover;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Noto Serif Display', serif;
+    width: 40%;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 2%;
+    font-family: 'Roboto Serif', sans-serif;
+    color: #141E27;
+    font-size: 30px;
+}
+.insert{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    justify-content: space-between;
+    background-color: #EEEDDE;
+    height: 70px;
+    width:100%;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+/* .details{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+}
+.content-table{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+table,th{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+} */
+
+
+
+.content-table{
+    border-collapse: collapse;
+    margin-top:2%;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr{
+    background-color:#263238;
+    color:#ffffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+.content-table tbody tr{
+    border-bottom:1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #263238;
+}
