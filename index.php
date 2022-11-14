@@ -2,7 +2,6 @@
 include_once "./crud.php";
 
 $crud = new Crud();
-session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +15,7 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- navbar google fonts -->
 
@@ -34,24 +33,7 @@ session_start();
         rel="stylesheet">
     <!-- end if first section font -->
     <!-- javacsript slide -->
-    <script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-    </script>
-
-    <!-- slides -->
+   
 </head>
 
 <body>
@@ -65,7 +47,6 @@ function carousel() {
         <span class="logoname">ARFLAIR</span>
         </div>
         <div class="right_texts">
-            <a href="page.php">Rental</a>
              <!--  cart modal  -->
   <div class="cart-modal-overlay">
     <div class="cart-modal">
@@ -90,10 +71,10 @@ function carousel() {
     </section>
     <!-- end navbar -->
      <!-- Slideshow container -->
-     <div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="./assets/images/art-6260031.jpg" style="width:100%">
-  <img class="mySlides" src="./assets/images/images.jpg" style="width:100%">
-  <img class="mySlides" src="./assets/images/purpose-of-design.jpg" style="width:100%">
+     <div class="slider">
+  <img class="mySlides" src="./assets/images/art-6260031.jpg">
+  <img class="mySlides" src="./assets/images/images.jpg">
+  <img class="mySlides" src="./assets/images/purpose-of-design.jpg">
 </div>
 
     <!-- 
@@ -176,6 +157,24 @@ function carousel() {
           </div>
     </footer>
     <script src="index.js"></script>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+    </script>
+
+    <!-- slides -->
 </body>
 
 </html>
